@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Movies</title>
+</head>
+<body>
+
+    <h1> Checkout August 8th cohort favorite movies</h1>
+
+    <ul> <% for(const movie of favoriteMovies) {%> 
+        <li> <%= movie.entryBy%> favorite movie is <%= movie.title%>. It was released in <%= movie.year%>
+            <form action="/delete/<%=movie.id%>" method="post">
+                <button type="submit"> delete </button>
+            </form>
+            <a href="/edit/<%=movie.id%>"> edit</a>
+        </li>
+
+    
+    <% } %></ul>
+    
+</body>
+</html>
