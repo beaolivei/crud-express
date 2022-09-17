@@ -7,12 +7,16 @@
     <title>Edit</title>
 </head>
 <body>
-    <h1> Edit Movie Entry</h1>
+    <h1> Please edit the movie</h1>
     <form action="/edit/<%=movie.id%>" method="post">
-        <input type="text" name="title" value="<%= movie.title%>"/></br>
-        <input type="text" name="year" value="<%= movie.year%>"/><br>
-        <input type="text" name="entryBy" value="<%= movie.entryBy%>"/> <br>
-        <button type="submit"> make change</button>
+        <label for="titleInput"> title:</label>
+        <input id="titleInput" type="text" name="title" value="<%=movie.title%>"/> <br>
+        <label for="yearInput"> year of release:</label>
+        <input id="yearInput" type="text" name="year" value="<%=movie.year%>"/> <br>
+        <label for="authorInput"> entry's author: </label>
+        <input id="authorInput" type="text" name="entryBy" value= "<%=movie.entryBy%>"/> <br>
+        <button type="submit"> Edit your movie </button>
     </form>
+    
 </body>
 </html>

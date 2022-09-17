@@ -1,14 +1,22 @@
 {
-  "name": "favorite-movies",
+  "name": "favorite_movies",
   "version": "1.0.0",
-  "description": "this app saves 8th August cohort's favorite movies",
+  "description": "contains cohort 8 August favorite movies",
   "main": "server.js",
   "scripts": {
-    "test": "test",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon ./server.js"
   },
-  "author": "Bea Oliveira",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beaolivei/crud-express.git"
+  },
+  "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beaolivei/crud-express/issues"
+  },
+  "homepage": "https://github.com/beaolivei/crud-express#readme",
   "dependencies": {
     "body-parser": "^1.20.0",
     "ejs": "^3.1.8",
