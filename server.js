@@ -51,6 +51,7 @@ app.post("/add", (req, res) => {
         year: req.body.year,
         entryBy: req.body.entryBy
     }
+    console.log('movie id ', favoriteMovies.length)
     favoriteMovies.push(newMovie)
     res.redirect('/')
 })
